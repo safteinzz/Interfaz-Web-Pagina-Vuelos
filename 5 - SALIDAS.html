@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Manager Vuelos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="pics/favicon.ico">
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- LIBS -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <script src="libs/jquery-3.4.1.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+				<img src="pics/marca.png" alt="Logo">
+			</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		
+            
+
+            <ul class="navbar-nav mr-auto">
+			
+				<li class="nav-item active">
+					<a class="nav-link" href="#">
+						<i class="fa fa-home"></i>
+						Inicio
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-plane"></i>
+						Vuelos
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Salidas</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Aerolineas</a>						
+						<a class="dropdown-item" href="#">Rutas</a>
+					</div>
+				</li>
+				
+				<li class="nav-item active">
+                    <input type="text" class="casillaBusqueda" name="" placeholder="Buscar Vuelo...">
+                </li>
+				
+				
+            </ul>
+			
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fa fa-bell">
+							<span class="badge badge-success">11</span>
+						</i>
+					</a>
+				</li>
+                <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="pics/yo.jpg" class="rounded-circle z-depth-0 img-fluid md-avatar" alt="avatar image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                        <a class="dropdown-item" href="#">My perfil</a>
+                        <a class="dropdown-item" href="#">Configuración</a>
+                        <a class="dropdown-item" href="#">Salir</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <h3>Collapsible Navbar</h3>
+        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+    </div>
+</body>
+
+</html>

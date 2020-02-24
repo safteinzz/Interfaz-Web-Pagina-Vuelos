@@ -1,0 +1,82 @@
+body{
+        background: radial-gradient(#80b1d6,#0e83cd) no-repeat;
+        color: #fff;
+        height: 100vh;
+    }
+    section{
+        padding: 5em;
+    }
+    ::-webkit-input-placeholder { 
+      color: #000000;
+    }
+    ::-moz-placeholder { 
+      color: #000000;
+    }
+    .casillaBusqueda {
+        background: url(https://www.iconsdb.com/icons/preview/black/magnifying-glass-3-xxl.png) no-repeat left;
+        border: 1px solid #ccc;
+        outline: none;
+        background-size: 22px;
+        background-position: 13px;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        padding: 25px;
+        transition: all .5s;
+    }
+    .casillaBusqueda:focus{
+        width: 300px;
+        padding-left: 50px;
+    }
+
+    .search-hover {
+        background: url(https://www.iconsdb.com/icons/preview/black/magnifying-glass-3-xxl.png) no-repeat left;
+        border: 1px solid #ccc;
+        outline: none;
+        background-size: 22px;
+        background-position: 13px;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        padding: 25px;
+        transition: all .5s;
+    }
+    .search-hover:hover{
+        width: 300px;
+        padding-left: 50px;
+    }
+
+.search-click {
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+}  
+.search-click input {
+    background: transparent;
+    border: 1px solid #ccc;
+    outline: none;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 0%;
+    padding: 10px;
+}
+
+.navbar-nav > li{
+  padding:10px;
+}
+
+.navbar-nav li a {
+ line-height: 40px;
+}
+
+.fondo {
+	
+	background: url('./pics/fondo.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	min-height: 100%;
+    height: 100%;
+}
