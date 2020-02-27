@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Aerolineas</title>
+    <title>Salidas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="pics/favicon.ico">
@@ -39,7 +39,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">
 						<i class="fa fa-home"></i>
-						Inicio						
+						Inicio
 					</a>
 				</li>
 				
@@ -60,6 +60,9 @@
                     <input type="text" class="casillaBusqueda" name="" placeholder="Buscar Vuelo...">
                 </li>
 				
+				<li class="nav-item">
+					<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Crear nueva salida</a>
+				</li>
 				
             </ul>
 			
@@ -105,103 +108,105 @@
 	
 	
 	
-	<div class="row container-fluid px-0 h-100 w-100 no-gutter">	
+	<div class="row container-fluid min-vh-100">
 
-
-		<div class="col-sm fondo3 p-5">
 		
-			<div>
-        <h1 class="display-3">Agregar Aerolinea</h1>
-        <p class="lead pt-5">
-			Rellena el siguiente formulario y presiona en agregar para agregar una nueva aerolinea, todos los campos son obligatorios
-		</p>
-        <form class="p-5">
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Codigo</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
-  </div>
-  
-  <div class="form-group row">
-    <div class="col-sm-2">Activa</div>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-success">Crear</button>
-    </div>
-  </div>
-</form>
-      </div>
-	  
-		</div>
-		<div class="col-sm p-3">
-			<table class="table table-striped">
-				<thead class="thead-dark">
-					<tr>
-						<th>Codigo Aerolinea</th>
-						<th>Nombre</th>
-						<th>Estado</th>
-						<th></th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>2341</td>
-						<td>Iberia</td>
-						<td>Activa</td>
-						<td><a href="#">Editar</a></td>
-						<td><a href="#">Borrar</a></td>
-					</tr>
-					<tr>
-						<td>47564</td>
-						<td>Evelop Airlines</td>
-						<td>Activa</td>
-						<td><a href="#">Editar</a></td>
-						<td><a href="#">Borrar</a></td>
-					</tr>
-					<tr>
-						<td>87987</td>
-						<td>Binter Canarias</td>
-						<td>Activa</td>
-						<td><a href="#">Editar</a></td>
-						<td><a href="#">Borrar</a></td>
-					</tr>
-					<tr>
-						<td>123123</td>
-						<td>Vueling Airlines</td>
-						<td>Activa</td>
-						<td><a href="#">Editar</a></td>
-						<td><a href="#">Borrar</a></td>
-					</tr>
-					<tr>
-						<td>433443</td>
-						<td>AeroMarte</td>
-						<td>Inactiva</td>
-						<td><a href="#">Editar</a></td>
-						<td><a href="#">Borrar</a></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
 
 
+		<div class="col-sm p-3 fondo5">
+		
+			
+		
+		
+		
+			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+				<div class="row container-fluid justify-content-center">
+					<div class="col col-lg-1 text-right">
+						<h2>ESP</h2>
+						<h6>Madrid, España</h6>
+					</div>
+					<div class="col col-lg-2 my-auto">
+						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col col-lg-1">
+						<h2>OPO</h2>
+						<h6>Porto, Portugal</h6>
+					</div>
+
+				</div>
+			</a>
+			
+			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+				<div class="row container-fluid justify-content-center">
+					<div class="col col-lg-1 text-right">
+						<h2>ESP</h2>
+						<h6>Madrid, España</h6>
+					</div>
+					<div class="col col-lg-2 my-auto">
+						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col col-lg-1">
+						<h2>OPO</h2>
+						<h6>Porto, Portugal</h6>
+					</div>
+
+				</div>
+			</a>
+			
+			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+				<div class="row container-fluid justify-content-center">
+					<div class="col col-lg-1 text-right">
+						<h2>ESP</h2>
+						<h6>Madrid, España</h6>
+					</div>
+					<div class="col col-lg-2 my-auto">
+						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col col-lg-1">
+						<h2>OPO</h2>
+						<h6>Porto, Portugal</h6>
+					</div>
+
+				</div>
+			</a>
+			
+			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+				<div class="row container-fluid justify-content-center">
+					<div class="col col-lg-1 text-right">
+						<h2>ESP</h2>
+						<h6>Madrid, España</h6>
+					</div>
+					<div class="col col-lg-2 my-auto">
+						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col col-lg-1">
+						<h2>OPO</h2>
+						<h6>Porto, Portugal</h6>
+					</div>
+
+				</div>
+			</a>
+			
+			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+				<div class="row container-fluid justify-content-center">
+					<div class="col col-lg-1 text-right">
+						<h2>ESP</h2>
+						<h6>Madrid, España</h6>
+					</div>
+					<div class="col col-lg-2 my-auto">
+						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="col col-lg-1">
+						<h2>OPO</h2>
+						<h6>Porto, Portugal</h6>
+					</div>
+
+				</div>
+			</a>
+		</div>
+		
+		
 	</div>
-
    
    
    
@@ -213,8 +218,52 @@
    
    
    
-   
-   
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="exampleModalLabel">Salida</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group row">
+							<label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Origen</label>
+							<div class="col-sm-10">
+								<select class="custom-select">
+									<option value="1" disabled selected>España</option>
+									<option value="2">Portugal</option>
+									<option value="3">Rusia</option>
+									<option value="4">Italia</option>
+									<option value="5">Alemania</option>
+									<option value="6">Austria</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Destino</label>
+							<div class="col-sm-10">
+								<select class="custom-select">
+									<option value="1">España</option>
+									<option value="2" disabled selected>Portugal</option>
+									<option value="3">Rusia</option>
+									<option value="4">Italia</option>
+									<option value="5">Alemania</option>
+									<option value="6">Austria</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
    
    
    
