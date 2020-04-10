@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Inicio</title>
+    <title>Mi Perfil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="pics/favicon.ico">
@@ -15,13 +15,41 @@
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <script src="libs/jquery-3.4.1.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+	<!--------------------------------------- FUNCIONES ADICIONALES ------------------------------------------>
+    <script>
+        function ocultarRepitePass() {
+            $(".repitePass").hide();
+        }
+
+        function mostrarRepitePass() {
+            $(".repitePass").show("slow");
+        }
+
+        function ocultarSubmiters() {
+            $("#submiters").hide();
+        }
+
+        function mostrarSubmiters() {
+            $("#submiters").show("fast");
+        }
+
+        function inicio() {
+            ocultarSubmiters();
+            ocultarRepitePass();
+        }
+
+        $(document).ready(inicio);
+
+        $(window).on("load", function() {
+            console.log("window loaded");
+        });
+    </script>
 </head>
 
 <body>
-	<!--------------------------------------- NAV BAR ------------------------------------------>
+	<!--------------------------------------- NAV BAR -------------------------------------->
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="pics/marca.png" alt="Logo">
@@ -34,10 +62,9 @@
 
             <ul class="navbar-nav mr-auto">
 
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="./INICIO.html">
                         <i class="fa fa-home"></i> Inicio
-                        <span class="sr-only">(current)</span>
                     </a>
                 </li>
 
@@ -66,7 +93,7 @@
 						</i>
                     </a>
                 </li>
-                <li class="nav-item avatar dropdown">
+                <li class="nav-item avatar dropdown active">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="pics/yo.jpg" class="rounded-circle z-depth-0 img-fluid md-avatar" alt="avatar image">
                     </a>
@@ -82,36 +109,118 @@
         </div>
     </nav>
 
-	<!--------------------------------------- BODY ------------------------------------------>
-    <div class="container-fluid px-0 fondo align-items-center px-1 d-flex align-items-center justify-content-center">
+	<!--------------------------------------- BODY ---------------------------------------->--
+    <div class="row container-fluid pt-5">
 
-        <div class="row justify-content-md-center text-light text-justify">
+        <div class="container bootstrap snippet text-dark">
+            <div class="row">
+                <div class="col-sm-10">
+                    <h1>PabloAntonio96</h1></div>
 
-            <div class="col col-lg-3">
-                <img class="rounded-circle" src="pics/salidas.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2>Salidas</h2>
-                <p>
-                    Información y gestión de las salidas programadas en curso y finalizadas del dia de hoy.
-                </p>
-                <p><a class="btn btn-light btn-outline-primary btn-lg btn-radius" href="./SALIDAS.html" role="button">Acceder »</a></p>
+                <div class="col-sm-2">
+
+                    <div class="profile-img-container">
+                        <img src="pics/yoGrande.jpg" class="img-thumbnail img-circle img-responsive" alt="avatar image" />
+                        <span id="other">
+				<i class="fa fa-upload fa-5x"></i>				
+			  </span>
+                        <input type="file" class="hiddenItem" id="target" accept="image/x-png,image/gif,image/jpeg" />
+                        <!-- accept="image/*"-->
+                    </div>
+                    <script>
+                        $("#other").click(function() {
+                            $("#target").click();
+                        });
+                    </script>
+                </div>
+
             </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <!--left col-->
 
-            <div class="col col-lg-3">
-                <img class="rounded-circle d-flex justify-content-center" src="pics/airlines.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2>Aerolineas</h2>
-                <p>
-                    Información y gestión de las Aerolineas colaboradoras con nosotros
-                </p>
-                <p><a class="btn btn-light btn-outline-primary btn-lg btn-radius" href="./AEROLINEAS.html" role="button">Acceder »</a></p>
-            </div>
+                    <ul class="list-group">
+                        <li class="list-group-item text-muted">Perfil</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>Se registró</strong></span> 13/06/2019</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>Ultima conexión</strong></span> Hace 12 dias</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>Rol</strong></span> Usuario</li>
 
-            <div class="col col-lg-3">
-                <img class="rounded-circle" src="pics/rutas.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2>Rutas</h2>
-                <p>
-                    Información sobre los trazados y direcciónes de rutas desde y hacia nuestros aeropuerots
-                </p>
-                <p><a class="btn btn-light btn-outline-primary btn-lg btn-radius" href="./RUTAS.html" role="button">Acceder »</a></p>
+                    </ul>
+
+                </div>
+                <!--/col-3-->
+                <div class="col-sm-8">
+
+                    <hr>
+                    <form class="mb-5">
+                        <!--class="form" action="##" method="post" id="registrationForm"-->
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="first_name">
+                                    <h4>Nombre</h4></label>
+                                <input type="text" class="form-control mostrarSubmiters" name="first_name" id="first_name" placeholder="Pablo Antonio" title="enter your first name if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="last_name">
+                                    <h4>Apellidos</h4></label>
+                                <input type="text" class="form-control mostrarSubmiters" name="last_name" id="last_name" placeholder="Hernández Hernández" title="enter your last name if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <label for="mobile">
+                                    <h4>Teléfono Movil</h4></label>
+                                <input type="text" class="form-control mostrarSubmiters" name="mobile" id="mobile" placeholder="616336949" title="enter your mobile number if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email">
+                                    <h4>Email</h4></label>
+                                <input type="email" class="form-control mostrarSubmiters" name="email" id="email" placeholder="pablohernandezcontacto@gmail.com" title="enter your email.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password">
+                                    <h4>Contraseña</h4></label>
+                                <input type="password" class="form-control mostrarRepitePass" name="password" id="password" placeholder="······················" title="enter your password.">
+                            </div>
+                        </div>
+                        <div class="form-group repitePass">
+                            <div class="col-xs-6">
+                                <label for="password2">
+                                    <h4>Verifica contraseña</h4></label>
+                                <input type="password" class="form-control" name="password2" id="password2" placeholder="" title="enter your password2.">
+                            </div>
+                        </div>
+                        <div class="form-group" id="submiters">
+                            <div class="col-xs-12 d-flex flex-row-reverse">
+                                <br>
+                                <button class="btn btn-lg ocultarTodoClk" type="reset"><i class="glyphicon glyphicon-repeat"></i> Cancelar</button>
+                                <button class="btn btn-lg btn-primary" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Actualizar</button>
+                            </div>
+                        </div>
+                        <script>
+                            $('.ocultarTodoClk').on('click', inicio);
+                            $('.ocultarSubmiters').on('input', ocultarSubmiters);
+                            $('.mostrarSubmiters').on('input', mostrarSubmiters);
+                            $('#password').on('input', function() {
+                                mostrarRepitePass();
+                                mostrarSubmiters();
+                            });
+                        </script>
+                    </form>
+                </div>
             </div>
 
         </div>

@@ -11,379 +11,306 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- LIBS -->
-	<link rel="stylesheet" href="libs/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="libs/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <script src="libs/jquery-3.4.1.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-				<img src="pics/marca.png" alt="Logo">
-			</a>
-		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-		
-            
 
-            <ul class="navbar-nav mr-auto">
-			
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="fa fa-home"></i>
-						Inicio
-					</a>
-				</li>
-				
-				<li class="nav-item dropdown active">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fa fa-plane"></i>
-						Vuelos						
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Salidas</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Aerolineas</a>						
-						<a class="dropdown-item" href="#">Rutas</a>
-					</div>
-				</li>
-				
-				<li class="nav-item active">
-                    <input type="text" class="casillaBusqueda" name="" placeholder="Buscar Vuelo...">
-                </li>
-				
-				<li class="nav-item">
-					<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Crear nueva salida</a>
-				</li>
-				
-            </ul>
-			
-            <ul class="navbar-nav ml-auto nav-flex-icons">
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="fa fa-bell ">
+	<!--------------------------------------- NAV BAR ------------------------------------------>
+    <!--------------------------------------- NAV BAR ------------------------------------------>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="pics/marca.png" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-home"></i> Inicio
+                </a>
+            </li>
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-plane"></i> Vuelos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./SALIDAS.html">Salidas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./AEROLINEAS.html">Aerolineas</a>
+                        <a class="dropdown-item" href="./RUTAS.html">Rutas</a>
+                </div>
+            </li>
+
+            <li class="nav-item active">
+                <input type="text" class="casillaBusqueda" name="" placeholder="Buscar Vuelo...">
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Crear nueva salida</a>
+            </li>
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-bell ">
 							<span class="badge badge-success">11</span>
 						</i>
-					</a>
-				</li>
-                <li class="nav-item avatar dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="pics/yo.jpg" class="rounded-circle z-depth-0 img-fluid md-avatar" alt="avatar image">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
-                        <a class="dropdown-item" href="#"><i class="fa fa-user mr-3"></i>My perfil</a>
-                        <a class="dropdown-item" href="#"><i class="fa fa-cog mr-3"></i>Configuración</a>
-						<div class="dropdown-divider"></div>
-                        <a class="dropdown-item list-group-item-danger list-group-item-action" href="#"><i class="fa fa-sign-out mr-3"></i></i>Salir</a>
+                </a>
+            </li>
+            <li class="nav-item avatar dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="pics/yo.jpg" class="rounded-circle z-depth-0 img-fluid md-avatar" alt="avatar image">
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                    <a class="dropdown-item" href="./PERFIL.html"><i class="fa fa-user mr-3"></i>My perfil</a>
+                    <!--<a class="dropdown-item" href="#"><i class="fa fa-cog mr-3"></i>Configuración</a>-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item list-group-item-danger list-group-item-action" href="#"><i class="fa fa-sign-out mr-3"></i></i>Salir</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+	<!--------------------------------------- BODY ------------------------------------------>
+    <div class="row container-fluid min-vh-100">
+
+        <div class="col-sm p-3 fondo5">
+
+            <a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+                <div class="row container-fluid justify-content-center">
+                    <div class="col col-lg-1 text-right">
+                        <h2>ESP</h2>
+                        <h6>Madrid, España</h6>
                     </div>
-                </li>
-            </ul>
+                    <div class="col col-lg-2 my-auto">
+                        <img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-1">
+                        <h2>OPO</h2>
+                        <h6>Porto, Portugal</h6>
+                    </div>
 
+                </div>
+            </a>
+
+            <a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+                <div class="row container-fluid justify-content-center">
+                    <div class="col col-lg-1 text-right">
+                        <h2>ESP</h2>
+                        <h6>Madrid, España</h6>
+                    </div>
+                    <div class="col col-lg-2 my-auto">
+                        <img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-1">
+                        <h2>BE</h2>
+                        <h6>Bruselas, Belgica</h6>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+                <div class="row container-fluid justify-content-center">
+                    <div class="col col-lg-1 text-right">
+                        <h2>AL</h2>
+                        <h6>Tirana, Albania</h6>
+                    </div>
+                    <div class="col col-lg-2 my-auto">
+                        <img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-1">
+                        <h2>IL</h2>
+                        <h6>Jerusalem, Israel</h6>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+                <div class="row container-fluid justify-content-center">
+                    <div class="col col-lg-1 text-right">
+                        <h2>IL</h2>
+                        <h6>Jerusalem, Israel</h6>
+                    </div>
+                    <div class="col col-lg-2 my-auto">
+                        <img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-1">
+                        <h2>OPO</h2>
+                        <h6>Bruselas, Belgica</h6>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
+                <div class="row container-fluid justify-content-center">
+                    <div class="col col-lg-1 text-right">
+                        <h2>FR</h2>
+                        <h6>Paris, Francia</h6>
+                    </div>
+                    <div class="col col-lg-2 my-auto">
+                        <img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-1">
+                        <h2>ESP</h2>
+                        <h6>Madrid, España</h6>
+                    </div>
+
+                </div>
+            </a>
         </div>
-    </nav>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="row container-fluid min-vh-100">
-
-		
-
-
-		<div class="col-sm p-3 fondo5">
-		
-			
-		
-		
-		
-			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
-				<div class="row container-fluid justify-content-center">
-					<div class="col col-lg-1 text-right">
-						<h2>ESP</h2>
-						<h6>Madrid, España</h6>
-					</div>
-					<div class="col col-lg-2 my-auto">
-						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
-					</div>
-					<div class="col col-lg-1">
-						<h2>OPO</h2>
-						<h6>Porto, Portugal</h6>
-					</div>
-
-				</div>
-			</a>
-			
-			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
-				<div class="row container-fluid justify-content-center">
-					<div class="col col-lg-1 text-right">
-						<h2>ESP</h2>
-						<h6>Madrid, España</h6>
-					</div>
-					<div class="col col-lg-2 my-auto">
-						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
-					</div>
-					<div class="col col-lg-1">
-						<h2>BE</h2>
-						<h6>Bruselas, Belgica</h6>
-					</div>
-
-				</div>
-			</a>
-			
-			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
-				<div class="row container-fluid justify-content-center">
-					<div class="col col-lg-1 text-right">
-						<h2>AL</h2>
-						<h6>Tirana, Albania</h6>
-					</div>
-					<div class="col col-lg-2 my-auto">
-						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
-					</div>
-					<div class="col col-lg-1">
-						<h2>IL</h2>
-						<h6>Jerusalem, Israel</h6>
-					</div>
-
-				</div>
-			</a>
-			
-			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
-				<div class="row container-fluid justify-content-center">
-					<div class="col col-lg-1 text-right">
-						<h2>IL</h2>
-						<h6>Jerusalem, Israel</h6>
-					</div>
-					<div class="col col-lg-2 my-auto">
-						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
-					</div>
-					<div class="col col-lg-1">
-						<h2>OPO</h2>
-						<h6>Bruselas, Belgica</h6>
-					</div>
-
-				</div>
-			</a>
-			
-			<a href="#" class="m-2 container-fluid btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,16,46,0.7147233893557423) 50%, rgba(255,255,255,0) 100%);">
-				<div class="row container-fluid justify-content-center">
-					<div class="col col-lg-1 text-right">
-						<h2>FR</h2>
-						<h6>Paris, Francia</h6>
-					</div>
-					<div class="col col-lg-2 my-auto">
-						<img src="pics/rutavuelo.png" class="img-fluid" alt="Responsive image">
-					</div>
-					<div class="col col-lg-1">
-						<h2>ESP</h2>
-						<h6>Madrid, España</h6>
-					</div>
-
-				</div>
-			</a>
-		</div>
-		
-		
-	</div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title text-dark" id="exampleModalLabel">Salida</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group row">
-							<label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Origen</label>
-							<div class="col-sm-10">
-								<select class="custom-select">
-									<option disabled selected>Cargar BD</option>
-									<option value="1">España</option>
-									<option value="2">Portugal</option>
-									<option value="3">Rusia</option>
-									<option value="4">Italia</option>
-									<option value="5">Alemania</option>
-									<option value="6">Austria</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group row">
-							<label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Destino</label>
-							<div class="col-sm-10">
-								<select class="custom-select">
-									<option disabled selected>Cargar BD</option>
-									<option value="1">España</option>
-									<option value="2">Portugal</option>
-									<option value="3">Rusia</option>
-									<option value="4">Italia</option>
-									<option value="5">Alemania</option>
-									<option value="6">Austria</option>
-								</select>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-<!-- Footer -->
-<footer class="pypage-footer bg-light">
-
-  <div class="bg-primary">
-    <div class="container">
-
-      <!-- Grid row-->
-      <div class="row d-flex align-items-center">
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0   py-1">
-          <h6 class="mb-0">Conectate a nuestra redes sociales!</h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-6 text-center text-md-right">
-
-          <!-- Facebook -->
-          <a class="text-white display-4 text-decoration-none mr-1" href="#">
-            <i class="fi-social-facebook"></i>
-          </a>
-          <!-- Twitter -->
-          <a class="text-white display-4 text-decoration-none mr-1" href="#">
-            <i class="fi-social-twitter"></i>
-          </a>
-          <!--Linkedin -->
-          <a class="text-white display-4 text-decoration-none mr-1" href="#">
-            <i class="fi-social-linkedin"></i>
-          </a>
-          <!--Instagram-->
-          <a class="text-white display-4 text-decoration-none mr-1" href="#">
-            <i class="fi-social-instagram"></i>
-          </a>
-
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row-->
 
     </div>
-  </div>
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left mt-5">
-
-    <!-- Grid row -->
-    <div class="row mt-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-        <!-- Content -->
-        <h6 class="text-uppercase font-weight-bold text-secondary">Plane Manager</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p class="text-secondary">Administración de aviones, aerolineas y mas cosas relacionadas con el vuelo de aviones hecho con facilidad</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold text-secondary">Vuelos</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Salidas</a>
-        </p>
-        <p>
-          <a href="#!">Aerolineas</a>
-        </p>
-        <p>
-          <a href="#!">Rutas</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold text-secondary">Contacto</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p class="text-secondary">
-			<i class="fi-marker mr-2"></i> Villena, Alicante. España
-		</p>
-        <p class="text-secondary">
-			<i class="fi-mail mr-1"></i> pablohernandezcontacto@gmail.com
-		</p>
-		<p class="text-secondary">
-			<i class="fa fa-phone  mr-1"></i> 616336989
-		</p>
-
-      </div>
-      <!-- Grid column -->
-
+	<!--------------------------------------- MODAL CREAR SALIDA ------------------------------------------>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Salida</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Origen</label>
+                            <div class="col-sm-10">
+                                <select class="custom-select">
+                                    <option disabled selected>Cargar BD</option>
+                                    <option value="1">España</option>
+                                    <option value="2">Portugal</option>
+                                    <option value="3">Rusia</option>
+                                    <option value="4">Italia</option>
+                                    <option value="5">Alemania</option>
+                                    <option value="6">Austria</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Destino</label>
+                            <div class="col-sm-10">
+                                <select class="custom-select">
+                                    <option disabled selected>Cargar BD</option>
+                                    <option value="1">España</option>
+                                    <option value="2">Portugal</option>
+                                    <option value="3">Rusia</option>
+                                    <option value="4">Italia</option>
+                                    <option value="5">Alemania</option>
+                                    <option value="6">Austria</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Grid row -->
 
-  </div>
-  <!-- Footer Links -->
+    <!--------------------------------------- FOOTER ------------------------------------------>
+    <footer class="pypage-footer bg-light">
 
-</footer>
-<!-- Footer -->
+		<!--------------------------------------- REDES SOCIALES ------------------------------------------>
+        <div class="bg-primary">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0   py-1">
+                        <h6 class="mb-0">Conectate a nuestra redes sociales!</h6>
+                    </div>
+					
+                    <div class="col-md-6 col-lg-6 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="text-white display-4 text-decoration-none mr-1" href="#">
+                            <i class="fi-social-facebook"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="text-white display-4 text-decoration-none mr-1" href="#">
+                            <i class="fi-social-twitter"></i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="text-white display-4 text-decoration-none mr-1" href="#">
+                            <i class="fi-social-linkedin"></i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="text-white display-4 text-decoration-none mr-1" href="#">
+                            <i class="fi-social-instagram"></i>
+                        </a>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------------- ENLACES E INFO ADICIONALES ------------------------------------------>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3">
+			
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold text-secondary">Plane Manager</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-secondary">Administración de aviones, aerolineas y mas cosas relacionadas con el vuelo de aviones hecho con facilidad</p>
+                </div>
+				
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold text-secondary">Vuelos</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="./SALIDAS.html">Salidas</a>
+                    </p>
+                    <p>
+                        <a href="./AEROLINEAS.html">Aerolineas</a>
+                    </p>
+                    <p>
+                        <a href="./RUTAS.html">Rutas</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-secondary">Contacto</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-secondary">
+                        <i class="fi-marker mr-2"></i> Villena, Alicante. España
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fi-mail mr-1"></i> pablohernandezcontacto@gmail.com
+                    </p>
+                    <p class="text-secondary">
+                        <i class="fa fa-phone  mr-1"></i> 616336989
+                    </p>
+                </div>
+				
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
